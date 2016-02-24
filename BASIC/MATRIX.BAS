@@ -18,15 +18,15 @@ CALL defl(80 + k)
 NEXT k
 COLOR 2
 FOR q = 1 TO 49
-LOCATE q, 51: PRINT "�"
+LOCATE q, 51: PRINT "³"
 NEXT q
 COLOR 14
-LOCATE 1, 53: PRINT "�����,-�,� (ᯥ�.). "
-LOCATE 2, 53: PRINT "- 1.��ઠ�쭠� �����"
-LOCATE 3, 53: PRINT "���⭮� ���, �㦠��"
-LOCATE 4, 53: PRINT "��� �⫨��� ��८⨯��."
-LOCATE 6, 53: PRINT "Matrix (���.)."
-LOCATE 7, 53: PRINT "- ��ࢮ��稭�, ���筨�."
+LOCATE 1, 53: PRINT "Œ âà¨æ ,-ë,¦ (á¯¥æ.). "
+LOCATE 2, 53: PRINT "- 1.‡¥àª «ì­ ï ª®¯¨ï"
+LOCATE 3, 53: PRINT "¯¥ç â­®© ä®à¬ë, á«ã¦ é ï"
+LOCATE 4, 53: PRINT "¤«ï ®â«¨¢ª¨ áâ¥à¥®â¨¯®¢."
+LOCATE 6, 53: PRINT "Matrix (« â.)."
+LOCATE 7, 53: PRINT "- ¯¥à¢®¯à¨ç¨­ , ¨áâ®ç­¨ª."
 
 DO
  FOR k = 1 TO mx
