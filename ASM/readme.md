@@ -15,11 +15,11 @@
         TASM /m /ml !.ASM
         TLINK32 /Tpe /ap /c /x !.OBJ
 ##### GUI WINDOWS file
-         [WPREASM](../Pascal/WPREASM.PAS/) !.ASM PROCCALL.INC
+         WPREASM !.ASM PROCCALL.INC
          TASM /m /ml !.ASM
          TLINK32 /Tpe /aa /c /x !.OBJ
 ##### GUI WINDOWS file + .RES file
-         [WPREASM](../Pascal/WPREASM.PAS) !.ASM PROCCALL.INC
+         WPREASM !.ASM PROCCALL.INC
          TASM /x /m /ml !.ASM
          TLINK32 /Tpe /aa /c /x !.OBJ,,,,,!.RES]
 
