@@ -11,9 +11,9 @@
         TASM /m !.ASM
         TLINK /3 /x !.OBJ
 ##### Console WINDOWS file
-         [WPREASM](../Pascal/WPREASM.PAS) !.ASM PROCCALL.INC
-         TASM /m /ml !.ASM
-         TLINK32 /Tpe /ap /c /x !.OBJ
+        WPREASM !.ASM PROCCALL.INC
+        TASM /m /ml !.ASM
+        TLINK32 /Tpe /ap /c /x !.OBJ
 ##### GUI WINDOWS file
          [WPREASM](../Pascal/WPREASM.PAS/) !.ASM PROCCALL.INC
          TASM /m /ml !.ASM
@@ -22,3 +22,5 @@
          [WPREASM](../Pascal/WPREASM.PAS) !.ASM PROCCALL.INC
          TASM /x /m /ml !.ASM
          TLINK32 /Tpe /aa /c /x !.OBJ,,,,,!.RES]
+
+WPREASM source may found [here](../Pascal/WPREASM.PAS)
