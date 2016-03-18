@@ -23,4 +23,4 @@
          TASM /x /m /ml !.ASM
          TLINK32 /Tpe /aa /c /x !.OBJ,,,,,!.RES]
 
-WPREASM source may found [here](../Pascal/WPREASM.PAS)
+WPREASM source may found [here](../Pascal/WPREASM.PAS) and windef.inc [here](windef.inc)
