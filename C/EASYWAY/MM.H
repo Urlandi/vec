@@ -1,0 +1,37 @@
+const char *menuline[2]={"Файл","Помощь"};
+const char *menufile[3]={"Обработать...","Отчеты...","Выход"};
+const char *menuhelp[2]={"Как пользоваться","О программе"};
+struct list_item *mainmenu=NULL,*elements[4];
+struct border_style menuview,dialogview;
+menuview.borderline=0;
+menuview.xleftcorner=1;
+menuview.xrightcorner=80;
+menuview.yleftcorner=1;
+menuview.yrightcorner=2;
+menuview.bordercolor=15;
+menuview.borderbackcolor=1;
+menuview.fill=1;
+menuview.fillbackcolor=1;
+menuview.fillcolor=15;
+menuview.shadow=1;
+menuview.selectcolor=1;
+menuview.selectbackcolor=7;
+
+dialogview.borderline=1;
+dialogview.xleftcorner=0;
+dialogview.xrightcorner=0;
+dialogview.yleftcorner=0;
+dialogview.yrightcorner=0;
+dialogview.bordercolor=15;
+dialogview.borderbackcolor=1;
+dialogview.fill=1;
+dialogview.fillcolor=15;
+dialogview.fillbackcolor=1;
+dialogview.shadow=1;
+dialogview.selectcolor=1;
+dialogview.selectbackcolor=7;
+
+for(q=0;q<2;q++)elements[q]=NULL;
+for(q=0;q<3;q++)elements[0]=addmenu(elements[0],(char*)menufile[q],1000+q,COMMAND,NULL);
+for(q=0;q<2;q++)elements[1]=addmenu(elements[1],(char*)menuhelp[q],2000+q,COMMAND,NULL);
+for(q=0;q<2;q++)mainmenu=addmenu(mainmenu,(char*)menuline[q],0,SUBMENU,elements[q]);
